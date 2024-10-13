@@ -1,0 +1,57 @@
+D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tb_tic_tac_toe.v {1 {vlog -work work -stats=none D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tb_tic_tac_toe.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_tic_tac_toe
+
+Top level modules:
+	tb_tic_tac_toe
+
+} {} {}} D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tic_tac_toe_game.v {1 {vlog -work work -stats=none D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tic_tac_toe_game.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tic_tac_toe_game
+
+Top level modules:
+	tic_tac_toe_game
+
+} {} {}} D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detector.v {1 {vlog -work work -stats=none D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module winner_detector
+
+Top level modules:
+	winner_detector
+
+} {} {}} D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/illegal_move_detector.v {1 {vlog -work work -stats=none D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/illegal_move_detector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module illegal_move_detector
+
+Top level modules:
+	illegal_move_detector
+
+} {} {}} D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detect_3.v {1 {vlog -work work -stats=none D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detect_3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module winner_detect_3
+
+Top level modules:
+	winner_detect_3
+
+} {} {}} D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/fsm_controller.v {1 {vlog -work work -stats=none D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/fsm_controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fsm_controller
+
+Top level modules:
+	fsm_controller
+
+} {} {}} D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/position_decoder.v {1 {vlog -work work -stats=none D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/position_decoder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module position_decoder
+
+Top level modules:
+	position_decoder
+
+} {} {}} D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/nospace_detector.v {1 {vlog -work work -stats=none D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/nospace_detector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module nospace_detector
+
+Top level modules:
+	nospace_detector
+
+} {} {}}

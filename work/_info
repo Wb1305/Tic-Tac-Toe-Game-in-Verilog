@@ -30,21 +30,21 @@ Z4 !s108 1728836689.000000
 Z5 o-work work
 Z6 tCvgOpt 0
 villegal_move_detector
-Z7 !s110 1728836690
+!s110 1729567361
 !i10b 1
-!s100 NAAccE6N_QFazH^71ejnZ1
-IL219I7dm6IfG4_f2mDHOz1
+!s100 _4G=ck0EZ[4FcZ;XNR[223
+IQ9;=zo5mmPkmP:jX3`8RU1
 R1
 R2
-w1728836639
+w1729567355
 8D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/illegal_move_detector.v
 FD:/NMPhuong/intelFPGA181/projects/TicTacToeGame/illegal_move_detector.v
-L0 5
+L0 3
 R3
 r1
 !s85 0
 31
-Z8 !s108 1728836690.000000
+!s108 1729567361.000000
 !s107 D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/illegal_move_detector.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/illegal_move_detector.v|
 !i113 1
@@ -72,55 +72,55 @@ R4
 R5
 R6
 vposition_decoder
-R7
+!s110 1729508946
 !i10b 1
-!s100 beN_MXmG_zG6KI7[D]SEJ1
-IOC;0KLlBC3ELjcJb:DR0T1
+!s100 CgR>2DMObZ[[L?cD;icnf2
+InZzNLChQCNnZ5>B^K^mk53
 R1
 R2
-w1728836683
+w1729508932
 8D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/position_decoder.v
 FD:/NMPhuong/intelFPGA181/projects/TicTacToeGame/position_decoder.v
-L0 4
+L0 2
 R3
 r1
 !s85 0
 31
-R8
+!s108 1729508946.000000
 !s107 D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/position_decoder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/position_decoder.v|
 !i113 1
 R5
 R6
 vposition_registers
-!s110 1728841178
+!s110 1729567065
 !i10b 1
-!s100 o@Yc3zeeiTN70U9nL?IRZ2
-IczGh8?8M^TG^zid8QSQ5I1
+!s100 ZzdUMmhmLP5YVTgNgTDe92
+ISR0@5kgi<k`m@LGboMFn63
 R1
 R2
-w1728841172
-8D:\NMPhuong\intelFPGA181\projects\TicTacToeGame\position_registers.v
-FD:\NMPhuong\intelFPGA181\projects\TicTacToeGame\position_registers.v
+w1729567035
+8D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/position_registers.v
+FD:/NMPhuong/intelFPGA181/projects/TicTacToeGame/position_registers.v
 L0 2
 R3
 r1
 !s85 0
 31
-!s108 1728841178.000000
-!s107 D:\NMPhuong\intelFPGA181\projects\TicTacToeGame\position_registers.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:\NMPhuong\intelFPGA181\projects\TicTacToeGame\position_registers.v|
+!s108 1729567065.000000
+!s107 D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/position_registers.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/position_registers.v|
 !i113 1
 R5
 R6
 vtb_tic_tac_toe
-!s110 1728838957
+!s110 1729556846
 !i10b 1
-!s100 iRM`mDH>SQ1mcl2A@BjST2
-I2bPKQmMjWLj934eiVDXX02
+!s100 gH[2no1Nm:9;3V;Kf^>VP1
+IY@<55:INd1aW=Bg0UZAFi1
 R1
 R2
-w1728838623
+w1729556828
 8D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tb_tic_tac_toe.v
 FD:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tb_tic_tac_toe.v
 L0 7
@@ -128,41 +128,41 @@ R3
 r1
 !s85 0
 31
-!s108 1728838957.000000
+!s108 1729556845.000000
 !s107 D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tb_tic_tac_toe.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tb_tic_tac_toe.v|
 !i113 1
 R5
 R6
 vtic_tac_toe_game
-R7
+!s110 1729556848
 !i10b 1
-!s100 jizFZ?440CKCdWY>A@Uzi3
-IoEVR[<^hEU?c16j1DOmkC2
+!s100 _nI2ACaKAa88T7N]@RMdX0
+Ih?l3bFJ6d_0gzY]1<7[4V0
 R1
 R2
-w1728820414
+w1729556773
 8D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tic_tac_toe_game.v
 FD:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tic_tac_toe_game.v
-L0 4
+L0 2
 R3
 r1
 !s85 0
 31
-R8
+!s108 1729556848.000000
 !s107 D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tic_tac_toe_game.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/tic_tac_toe_game.v|
 !i113 1
 R5
 R6
 vwinner_detect_3
-R7
+!s110 1729570942
 !i10b 1
-!s100 iiZRib:QIQ]_3GGZ1nQl?2
-IE?<l?XWeOBkNc_96Q`0M_1
+!s100 0MGRB569beIGOeS`g6EoL3
+IeV77Ta[n_Fz[gQ`T4oECP1
 R1
 R2
-w1728820120
+w1729570922
 8D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detect_3.v
 FD:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detect_3.v
 L0 5
@@ -170,20 +170,20 @@ R3
 r1
 !s85 0
 31
-R8
+!s108 1729570942.000000
 !s107 D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detect_3.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detect_3.v|
 !i113 1
 R5
 R6
 vwinner_detector
-R7
+!s110 1729570945
 !i10b 1
-!s100 ZcU3FGkX`fIeTnz;i7Ff<3
-IeBEjJfF8z5YYjHDLSn@<G1
+!s100 X1]dc<Wlo5A7KKOAb]N3Z2
+I[DVR`?al`f^7Q_[[0KDHd1
 R1
 R2
-w1728820004
+w1729570872
 8D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detector.v
 FD:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detector.v
 L0 2
@@ -191,7 +191,7 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1729570945.000000
 !s107 D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detector.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/NMPhuong/intelFPGA181/projects/TicTacToeGame/winner_detector.v|
 !i113 1

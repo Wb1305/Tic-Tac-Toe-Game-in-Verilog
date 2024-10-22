@@ -1,6 +1,4 @@
 
-// Verilog code for TIC TAC TOE GAME 
-// Top level module  
 module tic_tac_toe_game(
      input clock, // clock of the game 
      input reset, // reset button to reset the game 
@@ -10,14 +8,12 @@ module tic_tac_toe_game(
      // positions to play 
      output wire [1:0] pos1,pos2,pos3,
      pos4,pos5,pos6,pos7,pos8,pos9,
-     // LED display for positions 
      // 01: Player 
      // 10: Computer 
-     output wire[1:0]who 
-     // who the winner is 
+     output wire[1:0]who // who the winner is 
      );
- wire [15:0] PC_en;// Computer enable signals 
- wire [15:0] PL_en; // Player enable signals 
+ wire [8:0] PC_en;// Computer enable signals 
+ wire [8:0] PL_en; // Player enable signals 
  wire illegal_move; // disable writing when an illegal move is detected 
  //wire [1:0] pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;// positions stored
  wire win; // win signal 

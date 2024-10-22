@@ -1,1 +1,20 @@
 
+module position_decoder(input[3:0] in, input enable, output wire [8:0] out_en);
+    reg [8:0] temp1;
+    assign out_en = (enable == 1'b1) ? temp1 : 9'd0;
+    
+    always @(*) begin
+        case(in)
+            4'd0: temp1 <= 9'b000000001;  // V? trí 0
+            4'd1: temp1 <= 9'b000000010;  // V? trí 1
+            4'd2: temp1 <= 9'b000000100;  // V? trí 2
+            4'd3: temp1 <= 9'b000001000;  // V? trí 3
+            4'd4: temp1 <= 9'b000010000;  // V? trí 4
+            4'd5: temp1 <= 9'b000100000;  // V? trí 5
+            4'd6: temp1 <= 9'b001000000;  // V? trí 6
+            4'd7: temp1 <= 9'b010000000;  // V? trí 7
+            4'd8: temp1 <= 9'b100000000;  // V? trí 8
+            default: temp1 <= 9'b000000001;  // Giá tr? m?c ??nh
+        endcase
+    end
+endmodule

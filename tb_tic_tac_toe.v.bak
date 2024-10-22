@@ -1,5 +1,6 @@
 
 //note: position 1, 2, 3,.., 9 correspond 4'd0, 4'd1, 4'd2, ..., 4'd8
+// 01 : X (player) - 10 : O (computer) - 00 : (no space)
 
 `timescale 1ns / 1ps
 

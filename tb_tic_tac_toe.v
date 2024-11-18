@@ -1,10 +1,6 @@
-
-//note: position 1, 2, 3,.., 9 correspond 4'd0, 4'd1, 4'd2, ..., 4'd8
-// 01 : X (player) - 10 : O (computer) - 00 : (no space)
-
 `timescale 1ns / 1ps
 
-module tb_tic_tac_toe;
+module tb_tic_tac_toe_game;
 
 // Inputs
 reg clock;
@@ -15,15 +11,7 @@ reg [3:0] computer_position;
 reg [3:0] player_position;
 
 // Outputs
-wire [1:0] pos1;
-wire [1:0] pos2;
-wire [1:0] pos3;
-wire [1:0] pos4;
-wire [1:0] pos5;
-wire [1:0] pos6;
-wire [1:0] pos7;
-wire [1:0] pos8;
-wire [1:0] pos9;
+wire [1:0] pos1, pos2, pos3, pos4, pos5, pos6, pos7, pos8, pos9, pos10, pos11, pos12, pos13, pos14, pos15, pos16;
 wire [1:0] who;
 
 // Instantiate the Unit Under Test (UUT)
@@ -34,15 +22,10 @@ tic_tac_toe_game uut (
     .pc(pc),
     .computer_position(computer_position),
     .player_position(player_position),
-    .pos1(pos1),
-    .pos2(pos2),
-    .pos3(pos3),
-    .pos4(pos4),
-    .pos5(pos5),
-    .pos6(pos6),
-    .pos7(pos7),
-    .pos8(pos8),
-    .pos9(pos9),
+    .pos1(pos1), .pos2(pos2), .pos3(pos3), .pos4(pos4),
+    .pos5(pos5), .pos6(pos6), .pos7(pos7), .pos8(pos8),
+    .pos9(pos9), .pos10(pos10), .pos11(pos11), .pos12(pos12),
+    .pos13(pos13), .pos14(pos14), .pos15(pos15), .pos16(pos16),
     .who(who)
 );
 
@@ -54,122 +37,122 @@ end
 
 // Testbench logic
 initial begin
-    // Initialize Inputs
-    play = 0;
+    // Initialize inputs
     reset = 1;
+    play = 0;
+    pc = 0;
     computer_position = 0;
     player_position = 0;
-    pc = 0;
-    #100;
-    
-    // Reset game
-    reset = 0;
-    #100;
+    #50;
 
-    // First move: Player plays at position 1
+    // Release reset
+    reset = 0;
+    #50;
+
+    // Test case 1: Player wins (4 positions in a row)
+    // Player: Position 1
     play = 1;
-    pc = 0;
     player_position = 4'd0;
     #50;
     play = 0;
 
-    // Computer move: Computer plays at position 3
-    pc = 1;
-    computer_position = 4'd2;
-    #50;
-    pc = 0;
-    
-    // Second move: Player plays at position 2
-    play = 1;
-    player_position = 4'd1;
-    #50;
-    play = 0;
-
-    // Computer move: Computer plays at position 5
+    // Computer: Position 5
     pc = 1;
     computer_position = 4'd4;
     #50;
     pc = 0;
 
-    // Third move: Player plays at position 4
+    // Player: Position 2
     play = 1;
-    player_position = 4'd3;
+    player_position = 4'd1;
     #50;
     play = 0;
 
-    // Computer move: Computer plays at position 9
+    // Computer: Position 6
     pc = 1;
-    computer_position = 4'd8;
+    computer_position = 4'd5;
     #50;
     pc = 0;
 
-    // Final move: Player plays at position 7, Player should win
-    play = 1;
-    player_position = 4'd6;
-    #50;
-    play = 0;
-
-    // Check who wins (Player wins expected)
-    #100;
-    
-    // Reset game
-    reset = 1;
-    #100;
-    reset = 0;
-    #100;
-
-    // Another round: Computer starts first and wins
-    pc = 1;
-    computer_position = 4'd0;
-    #50;
-    pc = 0;
-
-    // Player move: plays at position 5
-    play = 1;
-    player_position = 4'd4;
-    #50;
-    play = 0;
-
-    // Computer move: plays at position 2
-    pc = 1;
-    computer_position = 4'd1;
-    #50;
-    pc = 0;
-
-    // Player move: plays at position 3
+    // Player: Position 3
     play = 1;
     player_position = 4'd2;
     #50;
     play = 0;
 
-    // Computer move: plays at position 4
-    pc = 1;
-    computer_position = 4'd3;
-    #50;
-    pc = 0;
-
-    // Player move: plays at position 6
-    play = 1;
-    player_position = 4'd5;
-    #50;
-    play = 0;
-
-    // Computer move: plays at position 7, Computer should win
+    // Computer: Position 7
     pc = 1;
     computer_position = 4'd6;
     #50;
     pc = 0;
 
-    // Check who wins (Computer wins expected)
+    // Player: Position 4 (Player wins)
+    play = 1;
+    player_position = 4'd3;
+    #50;
+    play = 0;
+
+    // Wait to check who wins
     #100;
 
-    // Reset game
+    // Test case 2: Computer wins
     reset = 1;
-    #100;
+    #50;
     reset = 0;
+    #50;
+
+    // Computer: Position 9
+    pc = 1;
+    computer_position = 4'd8;
+    #50;
+    pc = 0;
+
+    // Player: Position 1
+    play = 1;
+    player_position = 4'd0;
+    #50;
+    play = 0;
+
+    // Computer: Position 10
+    pc = 1;
+    computer_position = 4'd9;
+    #50;
+    pc = 0;
+
+    // Player: Position 2
+    play = 1;
+    player_position = 4'd1;
+    #50;
+    play = 0;
+
+    // Computer: Position 11
+    pc = 1;
+    computer_position = 4'd10;
+    #50;
+    pc = 0;
+
+    // Player: Position 3
+    play = 1;
+    player_position = 4'd2;
+    #50;
+    play = 0;
+
+    // Computer: Position 12 (Computer wins)
+    pc = 1;
+    computer_position = 4'd11;
+    #50;
+    pc = 0;
+
+    // Wait to check who wins
     #100;
 
-    // Another round: Draw scenario
+    // Test case 3: Draw scenario
+    reset = 1;
+    #50;
+    reset = 0;
+    #50;
+
+    // Fill all positions alternately
     // Player: Position 1
     play = 1;
     player_position = 4'd0;
@@ -182,49 +165,20 @@ initial begin
     #50;
     pc = 0;
 
-    // Player: Position 3
-    play = 1;
-    player_position = 4'd2;
-    #50;
-    play = 0;
+    // Repeat similar moves until the board is filled
+    repeat (7) begin
+        play = 1;
+        player_position = player_position + 4'd2;
+        #50;
+        play = 0;
 
-    // Computer: Position 4
-    pc = 1;
-    computer_position = 4'd3;
-    #50;
-    pc = 0;
+        pc = 1;
+        computer_position = computer_position + 4'd2;
+        #50;
+        pc = 0;
+    end
 
-    // Player: Position 5
-    play = 1;
-    player_position = 4'd4;
-    #50;
-    play = 0;
-
-    // Computer: Position 6
-    pc = 1;
-    computer_position = 4'd5;
-    #50;
-    pc = 0;
-
-    // Player: Position 7
-    play = 1;
-    player_position = 4'd6;
-    #50;
-    play = 0;
-
-    // Computer: Position 8
-    pc = 1;
-    computer_position = 4'd7;
-    #50;
-    pc = 0;
-
-    // Player: Position 9, should result in a draw
-    play = 1;
-    player_position = 4'd8;
-    #50;
-    play = 0;
-
-    // Check for draw (No winner expected)
+    // Wait to check draw
     #100;
 
     // Finish simulation
@@ -232,3 +186,4 @@ initial begin
 end
 
 endmodule
+

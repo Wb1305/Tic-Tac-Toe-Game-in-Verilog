@@ -7,13 +7,13 @@ module tic_tac_toe_game(
      input [3:0] computer_position,player_position, 
      // positions to play 
      output wire [1:0] pos1,pos2,pos3,
-     pos4,pos5,pos6,pos7,pos8,pos9,
+     pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,
      // 01: Player 
      // 10: Computer 
      output wire[1:0]who // who the winner is 
      );
- wire [8:0] PC_en;// Computer enable signals 
- wire [8:0] PL_en; // Player enable signals 
+ wire [15:0] PC_en;// Computer enable signals 
+ wire [15:0] PL_en; // Player enable signals 
  wire illegal_move; // disable writing when an illegal move is detected 
  //wire [1:0] pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9;// positions stored
  wire win; // win signal 
@@ -25,25 +25,25 @@ module tic_tac_toe_game(
       clock, // clock of the game 
       reset, // reset the game 
       illegal_move, // disable writing when an illegal move is detected 
-      PC_en[8:0], // Computer enable signals 
-      PL_en[8:0], // Player enable signals 
-      pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9// positions stored
+      PC_en[15:0], // Computer enable signals 
+      PL_en[15:0], // Player enable signals 
+      pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16// positions stored
       );
  // winner detector 
- winner_detector win_detect_unit(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,win,who);
+ winner_detector win_detect_unit(pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,win,who);
  // position decoder for computer 
  position_decoder pd1(computer_position,computer_play,PC_en);
  // position decoder for player  
  position_decoder pd2(player_position,player_play,PL_en); 
  // illegal move detector
   illegal_move_detector imd_unit(
-   pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9, 
-   PC_en[8:0], PL_en[8:0], 
+   pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,
+   PC_en[15:0], PL_en[15:0], 
    illegal_move
    );
  // no space detector 
  nospace_detector nsd_unit(
-   pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9, 
+   pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16, 
    no_space
     ); 
  fsm_controller tic_tac_toe_controller(

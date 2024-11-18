@@ -8,7 +8,6 @@ module tic_tac_toe_game(
      // positions to play 
      output wire [1:0] pos1,pos2,pos3,
      pos4,pos5,pos6,pos7,pos8,pos9,
-     // LED display for positions 
      // 01: Player 
      // 10: Computer 
      output wire[1:0]who // who the winner is 
